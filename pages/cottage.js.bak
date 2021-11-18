@@ -1,0 +1,11 @@
+import Layout from '../components/Layout';
+import CottageText from '../components/cottageText';
+import CottageSidePanel from '../components/cottageSidePanel.js';
+
+const Cottage = () => <Layout title="Cottage">
+    <CottageSidePanel />
+	<CottageText />
+    </div>
+</Layout>;
+
+export default Cottage;

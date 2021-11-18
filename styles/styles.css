@@ -1,0 +1,528 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import "leaflet.css";
+html,
+body,
+p,
+ol,
+ul,
+li,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: green;
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 20px;
+  width: 20px;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+/* General sidebar styles */
+.bm-menu {
+  background: white;
+  padding: 3.5em 2.5em 0;
+  font-size: 1.5rem;
+}
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+/* Wrapper for item list */
+.bm-item-list {
+  color: green;
+  padding: 3rem;
+}
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.menu-item {
+  color: green;
+}
+@media (min-width: 300px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media (min-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media (min-width: 775px) {
+  :root {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1000px) {
+  :root {
+    font-size: 14px;
+  }
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+#wrapper {
+  width: 100%;
+  margin: 0 0 auto;
+}
+h1 {
+  color: green;
+  font-weight: bold;
+  font-size: 2em;
+  padding-bottom: 0.7em;
+}
+@media (max-width: 775px) {
+  h1 {
+    margin-left: 2em;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    padding-left: 1rem;
+    font-size: 1.7em;
+    padding-bottom: 0.3em;
+  }
+}
+.contentLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+@media (max-width: 1200px) {
+  .contentLayout {
+    padding: 5rem 2rem 0rem;
+  }
+}
+.mainText {
+  flex: 2 0 auto;
+  width: 65%;
+  font-size: 1.2rem;
+  width: 45em;
+}
+@media (max-width: 775px) {
+  .mainText {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+.attractionsText {
+  flex: 1 0 auto;
+  width: 31.5%;
+}
+.largeMonitorMap {
+  display: none;
+}
+@media (min-width: 1500px) {
+  .largeMonitorMap {
+    display: block;
+    padding-right: 2rem;
+  }
+}
+.mediumMonitorMap {
+  display: none;
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .mediumMonitorMap {
+    display: block;
+    padding-right: 2rem;
+  }
+}
+.smallMonitorMap {
+  display: none;
+}
+@media (max-width: 1200px) and (min-width: 775px) {
+  .smallMonitorMap {
+    padding-top: 3rem;
+    display: block;
+    padding-left: 4rem;
+  }
+}
+.tabletPortMap {
+  display: none;
+}
+@media (max-width: 775px) and (min-width: 480px) {
+  .tabletPortMap {
+    display: block;
+    padding-left: 2rem;
+  }
+}
+.mobilePortMapGettingHere {
+  display: none;
+}
+@media (max-width: 480px) {
+  .mobilePortMapGettingHere {
+    display: block;
+    padding-right: 1rem;
+    padding-left: 3rem;
+  }
+}
+.mobilePortMapAttractions {
+  display: none;
+}
+@media (max-width: 480px) {
+  .mobilePortMapAttractions {
+    display: block;
+    padding-right: 1rem;
+    padding-left: 2rem;
+  }
+}
+.mainTextContact {
+  width: 65%;
+  min-width: 30em;
+}
+@media (max-width: 775px) {
+  .mainTextContact {
+    width: 90%;
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .mainTextContact {
+    padding-left: 1rem;
+  }
+}
+.sidePanel {
+  flex: 1 1 auto;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 35%;
+  min-width: 30rem;
+  font-size: 1.1rem;
+}
+@media (max-width: 1200px) {
+  .sidePanel {
+    min-height: 10rem;
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .sidePanel {
+    font-size: 1rem;
+    padding-left: 2rem;
+    min-height: 30rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1000px) and (max-width: 775px) {
+  .sidePanel {
+    min-height: 20rem;
+    min-width: 30rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .sidePanel {
+    min-width: 20rem;
+    padding-top: 2em;
+    font-size: 1.2rem;
+  }
+}
+.sidePanelHotelText {
+  flex: 1;
+  min-height: 20rem;
+}
+@media (max-width: 1200px) {
+  .sidePanelHotelText {
+    min-height: 22rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .sidePanelHotelText {
+    height: 20rem;
+    padding-bottom: 0;
+  }
+}
+.sidePanelRoomsText {
+  flex: 1 1 auto;
+  height: 23rem;
+}
+@media (max-width: 1200px) {
+  .sidePanelRoomsText {
+    height: 17rem;
+  }
+}
+@media (max-width: 480px) {
+  .sidePanelRoomsText {
+    height: 17rem;
+  }
+}
+.sidePanelgettingHereText {
+  flex: 1;
+  min-height: 25rem;
+  min-width: 25rem;
+}
+@media (max-width: 1200px) {
+  .sidePanelgettingHereText {
+    min-width: 25rem;
+  }
+}
+@media (max-width: 1000px) {
+  .sidePanelgettingHereText {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .sidePanelgettingHereText {
+    min-width: 25rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+.sidePanelAttractionsText {
+  flex: 1;
+  min-width: 35%;
+  min-height: 28rem;
+}
+@media (max-width: 1200px) {
+  .sidePanelAttractionsText {
+    min-height: 23rem;
+    min-width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .sidePanelAttractionsText {
+    min-height: 23rem;
+    min-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .sidePanelAttractionsText {
+    width: 25rem;
+    min-width: 14rem;
+    min-height: 28rem;
+    padding-bottom: 2rem;
+  }
+}
+.sidePanelContactText {
+  flex: 1;
+  font-size: 1.1rem;
+  min-height: 25rem;
+  max-width: 35rem;
+  padding-top: 3rem;
+  padding-left: 15rem;
+}
+@media (max-width: 1200px) {
+  .sidePanelContactText {
+    min-height: 23rem;
+    max-width: 40rem;
+    padding-left: 4rem;
+  }
+}
+@media (max-width: 1200px) {
+  .logo {
+    max-width: 45rem;
+    padding-left: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    max-width: 30rem;
+    padding-left: 0;
+  }
+}
+.menuPanelTop,
+.menuPanelTopRooms {
+  flex: 1 0 auto;
+  min-height: 30%;
+  padding-bottom: 1rem;
+  padding-left: 10rem;
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 480px) {
+  .menuPanelTop,
+  .menuPanelTopRooms {
+    display: none;
+  }
+}
+.menuPanelTopRooms {
+  padding-left: 1rem;
+  min-height: auto;
+}
+.menuPanelBottom {
+  display: none;
+}
+@media (max-width: 480px) {
+  .menuPanelBottom {
+    flex: 1;
+    padding-left: 1rem;
+    max-height: 12rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    color: green;
+    font-weight: 600;
+  }
+}
+ul.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  border-bottom: 2px dotted transparent;
+  border-top: 2px dotted transparent;
+  height: 100%;
+}
+ul.menu li {
+  flex: 1 0 auto;
+  text-align: center;
+  height: 100%;
+  background: white;
+  border: solid 2px transparent;
+}
+a {
+  outline: none;
+  color: green;
+  text-decoration: none;
+}
+.menu,
+a.menu:hover,
+.active {
+  flex: 1 0 auto;
+  background: white;
+  border: none;
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-top: 2px dotted transparent;
+  border-bottom: 2px dotted transparent;
+}
+@media (max-width: 775px) {
+  .menu,
+  a.menu:hover,
+  .active {
+    width: 90%;
+  }
+}
+a.menu:hover,
+.active {
+  border-bottom: 2px dotted green;
+  border-top: 2px dotted green;
+}
+.subMenu,
+a.subMenu:hover,
+.subMenuActive {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-bottom: 2px dotted transparent;
+}
+@media (max-width: 775px) {
+  .subMenu,
+  a.subMenu:hover,
+  .subMenuActive {
+    display: inline-block;
+  }
+}
+a.subMenu:hover,
+.subMenuActive {
+  border-bottom: 2px dotted green;
+}
+img.hotel {
+  flex: 1;
+  justify-content: center;
+  width: 1000;
+  height: 667;
+  padding-right: 2rem;
+}
+@media (max-width: 1000px) {
+  img.hotel {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (max-width: 775px) {
+  img.hotel {
+    padding: 0em;
+    width: 100%;
+  }
+}
+.bigMenu {
+  padding: 0 2rem;
+}
+@media (max-width: 1000px) {
+  .bigMenu {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .bigMenu {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .smallMenu {
+    display: none;
+  }
+}
+.large {
+  font: 20px sans-serif;
+}

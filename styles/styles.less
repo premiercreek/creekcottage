@@ -1,0 +1,402 @@
+@import "mini-reset.less";
+@import "burgerStyles.less";
+@import "fontBreakpoints.less";
+@import "breakpoints.less";
+@import "leaflet.css";
+
+
+@primary-color: green;
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+}
+#wrapper {
+	width: 100%;
+	margin: 0 0 auto;
+}
+
+//HTML Tags		/////////////////////////////////////////////////////////
+h1 {
+	color: green;
+	font-weight: bold;
+	font-size: 2em;
+	padding-bottom: 0.7em;
+
+@media (max-width: @tablet_port) {
+		margin-left: 2em;
+	}
+	 @media (max-width: @mobile_land) {
+		padding-left: 1rem;
+		font-size: 1.7em;
+		padding-bottom: 0.3em;
+	}
+}
+
+h3 {
+    display: inline;
+}
+
+//Layout		/////////////////////////////////////////////////////////
+
+.contentLayout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 1em;
+	@media (max-width: @small_monitor) {
+		padding: 5rem 2rem 0rem;
+	}
+}
+
+.mainText {
+	flex: 2 0 auto;
+	width: 65%;
+	font-size: 1.2rem;
+	//padding-right: 1em;
+	width: 45em;
+	@media (max-width: @tablet_port) {
+		width: 90%;
+		padding: 2rem;
+	}
+}
+
+.attractionsText {
+	flex: 1 0 auto;
+	width: 31.5%;
+}
+
+.largeMonitorMap {
+	display: none;
+@media(min-width: @medium_monitor) {
+	display: block;
+	padding-right: 2rem;
+}
+}
+
+.mediumMonitorMap {
+	display: none;
+@media(max-width: @medium_monitor) and (min-width: @small_monitor){
+	display: block;
+	padding-right: 2rem;
+}
+}
+.smallMonitorMap {
+	display: none;
+@media(max-width: @small_monitor) and (min-width: @tablet_port){
+	padding-top: 3rem;
+	display: block;
+	padding-left: 4rem;
+}
+}
+
+.tabletPortMap {
+	display: none;
+@media(max-width: @tablet_port) and (min-width: @mobile_land)
+{
+	display: block;
+	padding-left: 2rem;
+}
+}
+
+.mobilePortMapGettingHere {
+	display: none;
+@media (max-width: @mobile_land ){
+display: block;
+padding-right: 1rem;
+padding-left: 3rem;
+}
+
+}
+
+.mobilePortMapAttractions {
+	display: none;
+@media (max-width: @mobile_land ){
+display: block;
+padding-right: 1rem;
+padding-left: 2rem;
+}
+}
+
+
+.mainTextContact {
+		width: 65%;
+	min-width: 30em;
+	@media (max-width: @tablet_port) {
+	width: 90%;
+		padding-top: 6rem;
+	
+	}
+@media (max-width: @mobile_land) {
+padding-left: 1rem;
+	
+	}
+}
+
+.sidePanel {
+	flex: 1 1 auto;
+	display: flex;
+	padding-left: 2em;
+	padding-right: 2em;
+	flex-flow: column;
+	justify-content: space-between;
+	width: 35%;
+	min-width: 30rem;
+	//min-height:50rem;
+
+	font-size: 1.1rem;
+	
+	@media(max-width: @small_monitor) {
+		min-height: 10rem;
+		width: 100%;
+
+	}
+
+	@media(max-width: @tablet_land){
+	font-size: 1rem;
+	padding-left: 2rem;
+	min-height:30rem;
+	padding-right: 2rem;
+	font-size: 1.2rem;
+	@media (max-width: @tablet_port) {
+	min-height:20rem;
+		min-width: 30rem;
+	font-size: 1.2rem;
+	}}
+
+	@media (max-width: @mobile_land) {
+min-width: 20rem;
+	padding-top: 2em;
+	font-size: 1.2rem;
+	
+	}
+}
+
+.sidePanelHotelText {
+	flex: 1;
+	min-height: 20rem;
+	@media (max-width: @small_monitor){
+min-height: 22rem;
+padding-bottom: 2rem;
+	}
+	@media (max-width: @mobile_land){
+height: 20rem;
+padding-bottom: 0;
+	}
+}
+
+.sidePanelRoomsText {
+	flex: 1 1 auto;
+	height: 23rem;
+
+@media (max-width: @small_monitor){
+	height: 17rem;	
+	}
+@media (max-width: @mobile_land){
+height: 17rem;
+	}
+
+}
+.sidePanelgettingHereText {
+		flex: 1;
+	min-height: 25rem;
+	min-width: 25rem;
+	@media (max-width: @small_monitor){
+min-width: 25rem;
+	}
+
+	@media (max-width: @tablet_land) {
+		padding-bottom: 2rem;
+	}
+	@media (max-width: @mobile_land){
+min-width: 25rem;
+padding-left: 3rem;
+padding-bottom: 2rem;
+	}
+}
+
+	.sidePanelAttractionsText {
+	flex: 1;
+	min-width: 35%;
+	min-height: 28rem;
+	@media (max-width: @small_monitor){
+		min-height: 23rem;
+		min-width: 100%;
+	}
+	@media (max-width: @tablet_land) {
+				min-height: 23rem;
+		min-width: 100%;
+	}
+	@media (max-width: @mobile_land){
+width: 25rem;
+min-width: 14rem;min-height: 28rem;
+padding-bottom: 2rem;
+	}
+}
+
+
+	.sidePanelContactText {
+	flex: 1;
+	font-size: 1.1rem;
+	min-height: 25rem;
+	max-width: 35rem;
+	padding-top: 3rem;
+	padding-left: 15rem;
+	@media (max-width: @small_monitor){
+min-height: 23rem;
+max-width: 40rem;
+padding-left: 4rem;
+	}
+}
+
+.logo {
+	@media (max-width: @small_monitor){
+max-width: 45rem;
+padding-left: 4rem;
+	}
+
+	@media (max-width: @mobile_land) {
+	max-width: 30rem;
+	padding-left: 0;
+	}
+}
+
+.menuPanelTop {
+	flex: 1 0 auto;
+	min-height: 30%;
+	padding-bottom: 1rem;
+	padding-left: 10rem;
+
+@media (max-width: @tablet_land) {
+		//padding-bottom: 2rem;
+
+	}
+	@media (max-width: @mobile_land) {
+	display: none;	
+	}
+}
+
+.menuPanelTopRooms:extend(.menuPanelTop) {
+	padding-left: 1rem;
+	min-height: auto;
+	//width: 40rem;
+}
+
+.menuPanelBottom {
+display: none;
+	@media (max-width: @mobile_land) {
+	flex: 1;
+	padding-left: 1rem;
+	max-height: 12rem;
+	font-size: 1.2rem;
+	display: inline-block;
+	color: green;
+	font-weight: 600;
+	}
+}
+
+//Menus		/////////////////////////////////////////////////////////
+
+
+ul.menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+	border-bottom: 2px dotted transparent;
+	border-top: 2px dotted transparent;
+	height: 100%;
+}
+
+ul.menu li {
+	flex: 1 0 auto;
+	text-align: center;
+	height: 100%;
+	background: white;
+	border: solid 2px transparent;
+}
+
+
+a {
+	outline: none;
+	color: green;
+	text-decoration: none;
+}
+.menu {
+	flex: 1 0 auto;
+	//min-width: 6rem;
+	background: white;
+	border: none;
+	height: 100%;
+	display: block;
+	text-align: center;
+	font-size: 1.4rem;
+	padding: 1rem;
+	border-top: 2px dotted transparent;
+	border-bottom: 2px dotted transparent;
+	@media (max-width: @tablet_port) {
+		//font-size: 1.3rem;
+		width: 90%;
+	}
+}
+
+a.menu:hover:extend(.menu),
+.active:extend(.menu) {
+	border-bottom: 2px dotted green;
+	border-top: 2px dotted green;
+}
+
+
+.subMenu {
+	display: inline-block;
+	text-align: left;
+	font-size: 1.1rem;
+	padding: 0.5rem;
+	border-bottom: 2px dotted transparent;
+	@media (max-width: @tablet_port) {
+		
+		display: inline-block;
+	}
+}
+
+a.subMenu:hover:extend(.subMenu),
+.subMenuActive:extend(.subMenu) {
+	border-bottom: 2px dotted green;
+}
+
+
+img.hotel {
+	flex: 1;
+	justify-content: center;
+
+	width: 1000;
+	height: 667;
+	padding-right: 2rem;
+	
+	@media(max-width: @tablet_land) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+@media (max-width: @tablet_port) {
+		padding: 0em;
+		width: 100%;
+	}
+}
+
+.bigMenu {
+	padding: 0 2rem;
+		@media (max-width: @tablet_land) {
+	padding-top: 2rem;
+	}
+	@media (max-width: @tablet_land) {
+		display: none;
+	}
+}
+
+@media (min-width: @tablet_land) {
+	.smallMenu {
+		display: none;
+	}
+}
+//
+ .large { font: 20px sans-serif; }

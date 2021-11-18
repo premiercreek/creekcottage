@@ -1,0 +1,28 @@
+{
+  "name": "premiercreek",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "antd": "^4.8.3",
+    "formdata-polyfill": "^3.0.20",
+    "formidable": "^1.2.2",
+    "leaflet": "^1.7.1",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
+    "next": "^11.0.1",
+    "nodemailer": "^6.4.16",
+    "react": "^17.0.2",
+    "react-app-polyfill": "^2.0.0",
+    "react-burger-menu": "^2.9.0",
+    "react-dom": "^17.0.2",
+    "react-lazyload": "^3.1.0",
+    "react-leaflet": "^3.2.0",
+    "react-responsive": "^8.2.0",
+    "react-slick": "^0.27.13",
+    "slick-carousel": "^1.8.1"
+  }
+}

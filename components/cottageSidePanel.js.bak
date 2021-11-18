@@ -1,0 +1,21 @@
+import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+const RoomsSidePanel = () => {
+
+const router = useRouter();
+	return (
+		<div>
+		<div className="sidePanel">
+		<h1>The Cottage</h1>
+		<h2>$50 - $90 + 13% tax</h2>
+<p>The Cottage is separate from the rest of the hotel.  It has a kitchen, two small bathrooms and a sofa.</p><br /><p>
+The cozy main bedroom has a double bed.  There are also two small rooms of bunk-beds - so the Cottage is ideal for families or for groups travelling together.  </p>
+</div>
+<div className="menuPanelTopRooms">
+</div>
+		</div>);
+};
+
+export default RoomsSidePanel;
