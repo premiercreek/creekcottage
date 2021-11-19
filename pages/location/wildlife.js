@@ -1,13 +1,13 @@
 import Layout from '../../components/Layout';
 import WildlifeText from '../../components/wildlifeText';
 import WildlifeSidePanel from '../../components/wildlifeSidePanel.js';
-import AttractionsSubMenu from '../../components/attractionsSubMenu';
+import LocationSubMenu from '../../components/locationSubMenu';
 
 const Wildlife = () => <Layout title="Wildlife">
     <WildlifeSidePanel />
     <WildlifeText />
      <div className="menuPanelBottom">
-        <AttractionsSubMenu />
+        <LocationSubMenu />
     </div>
 </Layout>;
 

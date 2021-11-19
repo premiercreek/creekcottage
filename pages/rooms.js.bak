@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import RoomsText from '../components/roomsText';
-import RoomSidePanel from '../components/roomsSidePanel.js';
+import RoomsSidePanel from '../components/roomsSidePanel.js';
 
 const Cottage = () => <Layout title="Cottage">
     <RoomsSidePanel />

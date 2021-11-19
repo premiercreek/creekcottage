@@ -7,21 +7,45 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 components/indexText.js
-badd +12 components/indexSidePanel.js
-badd +18 components/myMenu.js
+badd +26 components/indexText.js
+badd +21 components/indexSidePanel.js
+badd +33 components/myMenu.js
 badd +4 components/cottageText.js
 badd +18 components/cottageSidePanel.js
 badd +7 pages/cottage.js
-badd +3 pages/rooms.js
+badd +5 pages/rooms.js
 badd +44 components/roomsText.js
 badd +14 components/roomsSidePanel.js
-badd +0 styles/styles.less
+badd +295 styles/styles.less
+badd +5 pages/garden.js
+badd +1 components/hotelSubMenu.js
+badd +14 components/gardenSidePanel.js
+badd +5 pages/index.js
+badd +16 pages/gettinghere.js
+badd +1 pages/contact.js
+badd +11 pages/attractions.js
+badd +1 components/contactText.js
+badd +7 pages/facilities.js
+badd +1 components/roomsText.js.bak
+badd +1 pages/facilities.js.bak
+badd +2 pages/location.js
+badd +20 components/locationText.js
+badd +14 components/locationSidePanel.js
+badd +1 components/locationMap.js
+badd +10 pages/attractions/gwaiihaanas.js
+badd +1 pages/attractions/gwaiihaanas.js.bak
+badd +10 pages/attractions/haida.js
+badd +4 pages/attractions/wildlife.js
+badd +5 components/haidaSidePanel.js
+badd +5 components/wildlifeSidePanel.js
+badd +18 components/gwaiihaanasSidePanel.js
+badd +1 pages/location/gwaiihaanas.js
+badd +14 components/locationSubMenu.js
 argglobal
 %argdel
-$argadd styles/styles.less
+$argadd components/locationSidePanel.js
 set stal=2
-edit components/indexText.js
+edit components/haidaSidePanel.js
 set splitbelow splitright
 set nosplitbelow
 wincmd t
@@ -39,36 +63,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 25 - ((24 * winheight(0) + 19) / 39)
+let s:l = 5 - ((4 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
-normal! 016|
-tabedit components/indexSidePanel.js
-set splitbelow splitright
-set nosplitbelow
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 14 - ((13 * winheight(0) + 19) / 39)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-14
-normal! 0180|
+5
+normal! 019|
 tabedit components/myMenu.js
 set splitbelow splitright
 set nosplitbelow
@@ -87,94 +87,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 18 - ((17 * winheight(0) + 19) / 39)
+let s:l = 1 - ((0 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-18
+1
 normal! 0
-tabedit pages/rooms.js
-set splitbelow splitright
-set nosplitbelow
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 3 - ((2 * winheight(0) + 19) / 39)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-3
-normal! 0
-tabedit components/roomsText.js
-set splitbelow splitright
-set nosplitbelow
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 44 - ((38 * winheight(0) + 19) / 39)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-44
-normal! 024|
-tabnew
-set splitbelow splitright
-set nosplitbelow
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-tabedit styles/styles.less
-set splitbelow splitright
-set nosplitbelow
-wincmd t
-set winminheight=0
-set winheight=1
-set winminwidth=0
-set winwidth=1
-argglobal
-1argu
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 39 - ((27 * winheight(0) + 19) / 39)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-39
-normal! 0
-tabnext 6
+tabnext 2
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

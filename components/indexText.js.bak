@@ -23,7 +23,7 @@ const IndexText = () => {
   <LazyLoad height= {1} src="hotel_with_flowers.jpg"></LazyLoad>
   <LazyLoad height= {1} src="Hotel.jpg"></LazyLoad>
   <LazyLoad height= {1} src="hotel_with_lenore"></LazyLoad>
-
+  
 
   <LazyLoad height= {1} src="Hotel_02.jpg"></LazyLoad>
 

@@ -13,7 +13,7 @@ const GettingHere = () => {
  return (
 	<div>
 
-			<Layout title="Creek Cottage">
+			<Layout title="Getting Here">
 			<GettingHereSidePanel />
 				<GettingHereText />
 				<div className="tabletPortMap">

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import HotelSubMenu from './hotelSubMenu';
 import { useRouter } from 'next/router';
-import LocationSubMenu from './locationSubMenu';
+import LocationSubmenu from './locationSubMenu';
 
 const HaidaSidePanel = () => {
 

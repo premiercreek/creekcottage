@@ -14,20 +14,26 @@ const MyMenu = () => {
 							<a className={(((router.pathname.slice(0,1) === '/') && !router.pathname.slice(2,3)) || (router.pathname.slice(0,6) ==='/hotel')) ? 'active' : 'menu'}>Home</a>
 						</Link>
 					</li>	<li>
-						<Link href="/rooms">
-							<a className={router.pathname.slice(0,6) === '/rooms' ? 'active' : 'menu'}>The Rooms</a>
+						<Link href="/facilities">
+							<a className={router.pathname.slice(0,6) === '/facilities' ? 'active' : 'menu'}>Facilities</a>
+						</Link>
+					</li><li>
+											<Link href="/garden">
+							<a className={router.pathname.slice(0,6) === '/garden' ? 'active' : 'menu'}>The Gardens</a>
 						</Link>
 					</li>
-				<li>
+
+					<li>
+						<Link href="/location">
+							<a className={router.pathname.slice(0,12) === '/location' ? 'active' : 'menu'}>Location</a>
+						</Link>
+					</li>
+									<li>
 						<Link href="/gettinghere">
 							<a className={router.pathname.slice(0,12) === '/gettinghere' ? 'active' : 'menu'}>Getting Here</a>
 						</Link>
 					</li>
-					<li>
-						<Link href="/attractions">
-							<a className={router.pathname.slice(0,12) === '/attractions' ? 'active' : 'menu'}>Attractions</a>
-						</Link>
-					</li>	
+
 					<li>
 						<Link href="/contact">
 							<a className={router.pathname.slice(0,10) === '/contact' ? 'active' : 'menu'}>Contact</a>

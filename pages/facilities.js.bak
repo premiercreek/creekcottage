@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import RoomsText from '../components/roomsText';
 import RoomsSidePanel from '../components/roomsSidePanel.js';
 
-const Cottage = () => <Layout title="Cottage">
+const Cottage = () => <Layout title="Creek Cottage">
     <RoomsSidePanel />
 	<RoomsText />
 </Layout>;
