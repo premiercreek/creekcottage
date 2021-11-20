@@ -7,17 +7,19 @@ const Burgermenu = () => {
 		<Menu width={350}>
 			<a id="home" className="menu-item" href="/">
 				Home
-			</a><a id="rooms" className="menu-item" href="/rooms">
-				Rooms and Rates
+			</a><a id="facilities" className="menu-item" href="/facilities">
+				Facilities
 			</a>
 		
+			<a id="garden" className="menu-item" href="/garden">
+				The Gardens
+			</a>
+			<a id="location" className="menu-item" href="/location">
+				The Location
+			</a>
 			<a id="gettinghere" className="menu-item" href="/gettinghere">
 				Getting Here
 			</a>
-			<a id="attractions" className="menu-item" href="/attractions">
-				Attractions
-			</a>
-
 			
 			<a id="contact" className="menu-item" href="/contact">
 				Contact Us

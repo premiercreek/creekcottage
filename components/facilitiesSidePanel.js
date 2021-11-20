@@ -11,7 +11,7 @@ const router = useRouter();
 		<div className="sidePanelRoomsText">
 		<h1>Facilities</h1>
 			<h3>Bedrooms</h3>
-			<p>Creek Cottage has two small bedrooms with bunks and one with a double bed: the rooms are quiet and secluded, with views over gardens.  All the bedrooms are quite small, so we limit the total number of guests to about four people.</p>
+			<p>Creek Cottage has two small bedrooms with bunks and one with a double bed. The rooms are quiet and secluded, with views over gardens.  All the bedrooms are quite small, so we limit the total number of guests to about four people.</p>
 			<h3>Living and Dining Area</h3>
 				<p>The living area has a sofa and a wood stove to keep you warm in winter.  Next to that is the dining area, which has views over the water.</p>
 				<h3>Kitchen Area</h3>
