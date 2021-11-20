@@ -28,19 +28,19 @@ const IndexText = () => {
   <LazyLoad height= {1} src="Hotel_02.jpg"></LazyLoad>
 
         <Slider {...settings}>
-          <div>
-          <img className="hotel" src="hotel_with_flowers.jpg" />
+			         <div>
+            <LazyLoad><img className="hotel" src="/Cottage_03.jpg" /></LazyLoad>
           </div>
           <div>
-              <img className="hotel" src="Hotel.jpg" />
+          <LazyLoad> <img className="hotel" src="/Cottage.jpg" /></LazyLoad>
           </div>
-          <div>
-          <img className="hotel" src="hotel_with_lenore.jpg" />
+						         <div>
+            <LazyLoad><img className="hotel" src="/Cottage_05.jpg" /></LazyLoad>
           </div>
-          <div>
-          <img className="hotel" src="Hotel_02.jpg" />
+			         <div>
+            <LazyLoad><img className="hotel" src="/Cottage_06.jpg" /></LazyLoad>
           </div>
-       
+
         </Slider>
       </div>
     );

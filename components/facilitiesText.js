@@ -22,15 +22,13 @@ const RoomsText = () => {
 		<div className="mainText">
   
         <Slider {...settings}>
-         <div>
-            <LazyLoad><img className="hotel" src="/Cottage_03.jpg" /></LazyLoad>
-          </div>
-          <div>
-          <LazyLoad> <img className="hotel" src="/Cottage.jpg" /></LazyLoad>
-          </div>
           <div>
               <LazyLoad><img className="hotel" src="/Cottage_01.jpg" /></LazyLoad>
           </div>
+			          <div>
+              <LazyLoad><img className="hotel" src="/Cottage.jpg" /></LazyLoad>
+          </div>
+
           <div>
             <LazyLoad><img className="hotel" src="/Cottage_02.jpg" /></LazyLoad>
           </div>

@@ -15,11 +15,11 @@ const MyMenu = () => {
 						</Link>
 					</li>	<li>
 						<Link href="/facilities">
-							<a className={router.pathname.slice(0,6) === '/facilities' ? 'active' : 'menu'}>Facilities</a>
+							<a className={router.pathname.slice(0,12) === '/facilities' ? 'active' : 'menu'}>Facilities</a>
 						</Link>
 					</li><li>
 											<Link href="/garden">
-							<a className={router.pathname.slice(0,6) === '/garden' ? 'active' : 'menu'}>The Gardens</a>
+							<a className={router.pathname.slice(0,10) === '/garden' ? 'active' : 'menu'}>The Gardens</a>
 						</Link>
 					</li>
 
