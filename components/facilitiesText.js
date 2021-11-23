@@ -32,7 +32,11 @@ const RoomsText = () => {
           <div>
             <LazyLoad><img className="hotel" src="/Cottage_02.jpg" /></LazyLoad>
           </div>
-         
+
+			          <div>
+            <LazyLoad><img className="hotel" src="/DSC_4535.jpg" /></LazyLoad>
+          </div>
+
         </Slider>
       </div>
     );
