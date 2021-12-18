@@ -9,7 +9,7 @@ const IndexText = () => {
       dots: true,
       infinite: false,
       initialSlide: 0, autoplay: true,
-      speed: 8000,
+      speed: 12000,
       lazyLoad: 'progressive',
       fade: true,
       cssEase: "linear",

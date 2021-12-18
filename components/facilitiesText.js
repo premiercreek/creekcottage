@@ -10,7 +10,7 @@ const RoomsText = () => {
       dots: true,
       infinite: false,
       initialSlide: 0, autoplay: true,
-      speed: 8000,
+      speed: 12000,
       fade: true,
       cssEase: "linear",
       lazyLoad: true,
