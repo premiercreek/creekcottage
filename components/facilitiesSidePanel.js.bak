@@ -11,7 +11,7 @@ const router = useRouter();
 		<div className="sidePanelRoomsText">
 		<h1>Facilities</h1>
 			<h3>Bedrooms</h3>
-			<p>Creek Cottage has two small bedrooms with bunks and one with a double bed. the rooms are quiet and secluded, with views over gardens.  All the bedrooms are quite small, so we limit the total number of guests to about four people.</p>
+			<p>Creek Cottage has two small bedrooms with bunks and one with a double bed. The rooms are quiet and secluded, with views over gardens.  All the bedrooms are quite small, so we limit the total number of guests to about four people.</p>
 			<h3>Living and Dining Area</h3>
 				<p>The living area has a sofa and a wood stove to keep you warm in winter.  Next to that is the dining area, which has views over the water.</p>
 				<h3>Kitchen Area</h3>
@@ -19,7 +19,6 @@ const router = useRouter();
 			<h3>Deck</h3>
 			<p>There's a small deck outside with a bench and chairs.  In summer this is a lovely place to eat outside and watch the boats.</p>
 </div>
-{/* <div className="menuPanelTopRooms"> */}
 {/* <RoomsSubMenu/></div> */}
 		 </div>
 	);

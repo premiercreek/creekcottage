@@ -6,7 +6,7 @@ const ContactText = () => {
 	return (
 		<div className="mainTextContact">
 		
-			<img class="logo" src="Cottage_03.jpg" width="830" height="553" />
+			<img className="logo" src="Cottage_03.jpg" width="830" height="553" />
 
 		
 			<div />

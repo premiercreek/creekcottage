@@ -19,8 +19,6 @@ const router = useRouter();
 			<h3>Deck</h3>
 			<p>There's a small deck outside with a bench and chairs.  In summer this is a lovely place to eat outside and watch the boats.</p>
 </div>
-{/* <div className="menuPanelTopRooms"> */}
-{/* <RoomsSubMenu/></div> */}
 		 </div>
 	);
 };
