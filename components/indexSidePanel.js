@@ -8,7 +8,6 @@ const router = useRouter();
 	return (
 		<div className="sidePanel">
 
-			<div className="sidePanelHotelText">
 				<h1>Creek Cottage</h1>
 					<p>Welcome to Creek Cottage, the only backpacker hostel in Queen Charlotte.  Your host Lenore will do everything she can to make you feel at home.  She limits the number of guests to ensure that everyone is comfortable, so book early to reserve your place.</p>
 						<h3>Facilities</h3>
@@ -17,7 +16,6 @@ const router = useRouter();
 						<p>We are in the heart of the village.  The cottage is a couple of minutes’ walk from the marina, the laundromat, the ATM and the post office.  There are several small restaurants in the village, also within easy reach. </p>
 				<br/><p>The cottage is in the grounds of <Link href="http://www.premiercreek.ca"><a>a heritage hotel</a></Link>, surrounded by the hotel's gardens.</p>
 			</div>
-		</div>
 	);
 };
 
