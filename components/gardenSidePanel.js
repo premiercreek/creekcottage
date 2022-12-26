@@ -10,7 +10,7 @@ const router = useRouter();
 		
 	<h1>The Gardens</h1>
 	<h3>The Creek</h3>
-	<p>Creek Cottage is named after a creek which runs up one side of the property.  The water in the creek is drinkable, and makes a refreshing change from the mains water in Queen Charlotte, which is heavily chlorinated.</p><br/>
+	<p>Creek Cottage is named after a creek which runs up one side of the property.  The water in the creek is drinkable, and makes a refreshing change from the mains water in Daajing Giids (Queen Charlotte), which is heavily chlorinated.</p><br/>
 	<h3>Vegetables and Flowers</h3>
 	<p>At the back of the garden Lenore’s husband Pete grows vegetables and flowers: he learnt his skills in Tasmania and has found that getting produce to grown in the much cloudier environment of Haida Gwaii is often a challenge.  However, plants which are better adapted to harsher weather do well. </p><br />
 	<h3>Ravens and Eagles</h3>

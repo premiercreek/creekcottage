@@ -9,7 +9,7 @@ const router = useRouter();
 		<div className="sidePanel">
 
 				<h1>Creek Cottage</h1>
-					<p>Welcome to Creek Cottage, the only backpacker hostel in Queen Charlotte.  Your host Lenore will do everything she can to make you feel at home.  She limits the number of guests to ensure that everyone is comfortable, so book early to reserve your place.</p>
+					<p>Welcome to Creek Cottage, the only backpacker hostel in Daajing Giids (Queen Charlotte).  Your host Lenore will do everything she can to make you feel at home.  She limits the number of guests to ensure that everyone is comfortable, so book early to reserve your place.</p>
 						<h3>Facilities</h3>
 						<p>The cottage has three bedrooms, a living/dining area with views over the water and a small kitchen.  There is free car-parking and wifi for all guests.  There's a small deck where you can sit outside to eat in summer.</p>
 						<h3>Location</h3>

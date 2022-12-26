@@ -13,7 +13,7 @@ const ContactSidePanel = () => {
 			Premier Creek Lodging
 			</p>
 			<p>3101 Oceanview Drive</p>
-			<p>Queen Charlotte</p>
+			<p>Daajing Giids (Queen Charlotte)</p>
 			<p>British Columbia</p>
 			<p>V0T 1S0</p>
 			<p>Canada</p>
@@ -23,7 +23,7 @@ const ContactSidePanel = () => {
 <p>Tel: 250-559-8415</p>
 <p>Fax: 250-559-8198</p>
 <p>Toll Free Reservations: 1-888-322-3388</p><br/>
-<p><a href="mailto:premier@qcislands.net">premier@qcislands.net</a></p>
+<p><a href="mailto:lenore@premiercreek.ca">lenore@premiercreek.ca</a></p>
 			
 		</div>
 	);
