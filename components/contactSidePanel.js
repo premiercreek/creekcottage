@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Email from './email';
 import { MailOutlined } from '@ant-design/icons';
 

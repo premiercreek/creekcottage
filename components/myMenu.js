@@ -10,33 +10,33 @@ const MyMenu = () => {
 			<div className="bigMenu">
 				<ul className="menu">
 					<li>
-						<Link href="/">
-							<a className={(((router.pathname.slice(0,1) === '/') && !router.pathname.slice(2,3)) || (router.pathname.slice(0,6) ==='/hotel')) ? 'active' : 'menu'}>Home</a>
+						<Link href="/"
+							 className={(((router.pathname.slice(0,1) === '/') && !router.pathname.slice(2,3)) || (router.pathname.slice(0,6) ==='/hotel')) ? 'active' : 'menu'}>Home
 						</Link>
 					</li>	<li>
-						<Link href="/facilities">
-							<a className={router.pathname.slice(0,12) === '/facilities' ? 'active' : 'menu'}>Facilities</a>
+						<Link href="/facilities"
+							 className={router.pathname.slice(0,12) === '/facilities' ? 'active' : 'menu'}>Facilities
 						</Link>
 					</li><li>
-											<Link href="/garden">
-							<a className={router.pathname.slice(0,10) === '/garden' ? 'active' : 'menu'}>The Gardens</a>
+											<Link href="/garden"
+							 className={router.pathname.slice(0,10) === '/garden' ? 'active' : 'menu'}>The Gardens
 						</Link>
 					</li>
 
 					<li>
-						<Link href="/location">
-							<a className={router.pathname.slice(0,12) === '/location' ? 'active' : 'menu'}>Location</a>
+						<Link href="/location"
+							 className={router.pathname.slice(0,12) === '/location' ? 'active' : 'menu'}>Location
 						</Link>
 					</li>
 									<li>
-						<Link href="/gettinghere">
-							<a className={router.pathname.slice(0,12) === '/gettinghere' ? 'active' : 'menu'}>Getting Here</a>
+						<Link href="/gettinghere"
+							 className={router.pathname.slice(0,12) === '/gettinghere' ? 'active' : 'menu'}>Getting Here
 						</Link>
 					</li>
 
 					<li>
-						<Link href="/contact">
-							<a className={router.pathname.slice(0,10) === '/contact' ? 'active' : 'menu'}>Contact</a>
+						<Link href="/contact"
+							 className={router.pathname.slice(0,10) === '/contact' ? 'active' : 'menu'}>Contact
 						</Link>
 					</li>
 				</ul>
